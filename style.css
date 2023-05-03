@@ -400,7 +400,7 @@ section.venda{
 }
 
 .search1{
-    width: 300px;
+    width: 90%;
 }
 
 .search1 h2{
@@ -410,7 +410,7 @@ section.venda{
 }
 
 .search1 .barra-preco{
-    width: 300px;
+    width: 100%;
     height: 20px;
     color: white;
     border: 1px solid #ccc;
@@ -426,7 +426,7 @@ section.venda{
     width: 30%;
     height: 20px;
     border-radius: 20px;
-    background-color: rgb(200, 200, 200);
+    background:linear-gradient(to bottom, rgb(255,255,255), rgb(200,200,200));
 }
 
 .pointer-barra{
@@ -437,8 +437,8 @@ section.venda{
     top: -3px;
     cursor: pointer;
     border-radius: 8px;
-    background: rgb(210, 210, 210);
-    border: 1px solid black;
+    background:linear-gradient(to bottom, rgb(255,255,255), rgb(180,180,180));
+    border: 1px solid #777;
 }
 
 .valor-pesquisa{
@@ -466,6 +466,54 @@ section.venda{
     font-size: 24px;
     color: black;
     font-weight: normal;
+}
+
+.form-venda-wraper{
+    margin-top: 10px;
+}
+
+.form-venda-wraper input[type=checkbox]{
+    display: none;
+}
+
+.form-venda-wraper label{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+}
+
+.form-venda-wraper input[type=checkbox]:checked + label > .circle{
+    display: block;
+}
+
+.circle{
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background: black;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+.form-venda-wraper span{
+    padding: 0 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.vitrini-venda{
+    overflow: hidden;
+    float: left;
+    width: 70%;
+}
+
+.vitrini-venda .vitrini-destaques{
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -536,6 +584,26 @@ section.venda{
 
     nav.mobile{
         display: block;
+    }
+
+    .sidebar{
+        width: 100%;
+        text-align: center;
+    }
+
+    .search1{
+        display: inline-block;
+    }
+
+    .search2{
+        text-align: left;
+        display: inline-block;
+    }
+
+    .vitrini-venda{
+        float: left;
+        text-align: center;
+        width: 100%;
     }
 }
 
